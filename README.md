@@ -1,60 +1,43 @@
-# Laboratório 02 
-
-Este repositório diz respeito ao Laboratório n. 02 da ... cujo objetivo é explorar os recursos de Reconhecimento Facial e transformação de imagens em Dados no Azure ML.
-
 # Serviços testados
 
 Os serviços estão disponíveis e foram acessados no endereço https://portal.vision.cognitive.azure.com/ do "Vision Studio" e foram testados utilizando os créditos oferecidos pela própria Azure para experimentação.
 
-1. **Extract Text From Images**
+1. **Extraia texto de imagens**
 
-Used image `test_extract_text_from_shakespeare_poem.jpg` to extract its text information.
+Imagem usada `test_extract_text_from_shakespeare_poem.jpg` para extrair suas informações de texto.
 
-The result is saved into `output` directory.
+O resultado é salvo no diretório `output`.
 
-2. **Add captions to images**
+2. **Adicione legendas às imagens**
 
-This service generate a human-readable sentence that describes the content of an image.
+Este serviço gera uma frase legível que descreve o conteúdo de uma imagem.
 
-I'd tested with `test_recognize_objects.jpg`. This image is obtained on Unsplash.
+Eu testei com `test_recognize_objects.jpg`. Esta imagem foi obtida no Unsplash.
 
-The service descibres image as: "A group of people sitting at tables in a restaurant"
+O serviço descreve a imagem como: “Um grupo de pessoas sentadas às mesas de um restaurante”
 
-For the imagem `test_ai_image_services.jpg` the caption was: "A group of people walking on a street".
+Para a imagem `test_ai_image_services.jpg` a legenda era: “Um grupo de pessoas caminhando na rua”.
 
-3. **Spatial Services**
+3. **Serviços Espaciais**
 
-Some spatial services is not open for test with our assets.
+Alguns serviços espaciais não estão abertos para teste com nossos ativos.
 
-I was curios about services that "Count people in an area" and "Detect when people enter/exit a zone".
+Fiquei curioso sobre os serviços que "Contam pessoas em uma área" e "Detectam quando pessoas entram/saem de uma zona".
 
-4. **Detect common objects in images**
+4. **Detecte objetos comuns em imagens**
 
-For this service, I used `test_recognize_objects.jpg` and it could detect: 6 persons (1 missed!) and 5 chairs. 
+Para este serviço, utilizei `test_recognize_objects.jpg` e ele conseguiu detectar: ​​6 pessoas (1 perdida!) e 5 cadeiras.
 
 ![Print of detect objects service](outputs/print-detect-objects.png)
 
-I also tried with `grocery-shop.jpg` and `product-shelves.jpg` with no results. 
+Também tentei com `grocery-shop.jpg` e `product-shelves.jpg` sem resultados.
 
-The similiar service ("Recognize anda analyze shelf products") could not be easy tested with own images.
+O serviço semelhante ("Reconhecer e analisar produtos de prateleira") não pôde ser facilmente testado com imagens próprias.
 
-5. **Add dense captions to images**
+5. **Adicione legendas densas às imagens**
 
-It differs from service n. 3 mentioned. The caption is fully detailed.
+Difere do serviço n. 3 mencionado. A legenda é totalmente detalhada.
 
-For example, for image `test_ai_image_services.jpg` the caption was:
-
-```
-A group of people walking on a street
-A person wearing a red shirt and blue jeans
-A person carrying a brown backpack
-A man walking on the street
-A person walking with a backpack
-A woman wearing a plaid jacket and a purse
-A person walking down the street
-A woman in blue jeans and a black jacket
-A group of people walking across a street
-A man walking with a bag
-```
+Por exemplo, para a imagem `test_ai_image_services.jpg` a legenda era:
 
 ![Print of caption image](outputs/print-2-caption-image.png)
